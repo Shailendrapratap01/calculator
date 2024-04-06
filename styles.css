@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.grey-btn{
+    background-color: #E1E1E1;
+}
+.light-grey button{
+    background-color: #FAFAFA;
+}
+.main-container{
+    border: 1px solid black;
+    width: 30%;
+    margin: 100px auto;
+    padding: 20px;
+}
+.button-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.right-btn-container :last-child{
+    height: 190px;
+    background-color: #429EFF;
+}
+input{
+    font-size: 1.4rem;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    text-align: end;
+    padding: 10px;
+}
+button{
+    height: 40px;
+    background-color: white;
+    border: 1px solid #CECECE;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.left-button-container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left-button-container div{
+    display: flex;
+    justify-content: space-between;
+}
+.left-button-container button{
+    width: 31%;
+}
+.right-btn-container{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+.right-btn-container button{
+    width: 90%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .main-container{
+        width: 70%;
+        padding: 10px;
+    }
+}
