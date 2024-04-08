@@ -41,7 +41,10 @@ operations.forEach((operation)=>{
             !( expression.length === 0 && "+,*,/,".includes(e.target.innerHTML)) &&
             
             //to prevent two consicutive "-"
-            !( e.target.innerHTML === "-" && expression[expression.length - 1] === "-")
+            !( e.target.innerHTML === "-" && expression[expression.length - 1] === "-") &&
+
+            //to prevent "-" after "+"
+            !( e.target.innerHTML === "-" && expression[expression.length - 1] === "+")
 
             ){
                 //clear checkdecimal for new number

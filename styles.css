@@ -92,6 +92,7 @@ button{
         min-height: 100px;
         margin-bottom: 20px;
         padding: 20px;
+        padding-bottom: 30px;
     }
     .right-btn-container :last-child{
         height: 340px;
