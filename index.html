@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
 </head>
 <body>
-    
+    <div class="calculator">
+        <div class="input">
+            <textarea id="input-field" type="text" placeholder="0"></textarea>
+        </div>
+        <div class="button-container">
+            <div class="left-button-container">
+                <div>
+                    <button id="operator">+</button>
+                    <button id="operator">-</button>
+                    <button id="operator">*</button>
+                </div>
+                <div>
+                    <button id="number">7</button>
+                    <button id="number">8</button>
+                    <button id="number">9</button>
+                </div>
+                <div>
+                    <button id="number">4</button>
+                    <button id="number">5</button>
+                    <button id="number">6</button>
+                </div>
+                <div>
+                    <button id="number">1</button>
+                    <button id="number">2</button>
+                    <button id="number">3</button>
+                </div>
+                <div>
+                    <button id="number">0</button>
+                    <button id="decimal">.</button>
+                    <button id="clear-input">C</button>
+                </div>
+            </div>
+            <div class="right-btn-container">
+                <button id="operator">/</button>
+                <button id="evaluate">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
