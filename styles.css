@@ -6,7 +6,7 @@
 body{
     height: 100vh;
 }
-.grey-btn{
+#operator{
     background-color: #E1E1E1;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ body{
 .light-grey button{
     background-color: #FAFAFA;
 }
-.main-container{
+.calculator{
     border: 1px solid black;
     width: 30%;
     margin: 100px auto;
@@ -71,14 +71,14 @@ button{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px){
-    .main-container{
+    .calculator{
         width: 70%;
         padding: 10px;
     }
 }
 
 @media only screen and (min-width: 2560px){
-    .main-container{
+    .calculator{
         width: 30%;
         padding: 30px;
     }
