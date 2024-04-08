@@ -1,9 +1,9 @@
-const inputField = document.querySelector("#input-field");
+const inputField = document.getElementById("input-field");
 const numbers = document.querySelectorAll("#number");
 const operations = document.querySelectorAll("#operator");
-const equalsButton = document.querySelector("#evaluate");
-const clearAll = document.querySelector("#clear-input");
-const decimal = document.querySelector("#decimal");
+const equalsButton = document.getElementById("evaluate");
+const clearAll = document.getElementById("clear-input");
+const decimal = document.getElementById("decimal");
 
 let expression = [];
 let checkDecimal = false;
@@ -22,8 +22,8 @@ numbers.forEach((number)=>{
 decimal.addEventListener('click',(e)=>{
     //to convert "." to "0." in the begining 
     if ( expression.length === 0 ) {
-        expression.push("0", ".");
-        inputField.value = expression.join("");
+        setExpression("0");
+        setExpression(".");
         checkDecimal = true;
     }
     // to prevent two decimals in one number
